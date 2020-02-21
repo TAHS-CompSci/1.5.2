@@ -41,9 +41,9 @@ filename = os.path.join(directory, 'canopyIcon.jpg')
 import PIL.Image, PIL.ImageTk
 img = PIL.Image.open(filename) # create a PIL.Image from the jpg file
 tkimg = PIL.ImageTk.PhotoImage(img) # convert the PIL.Image to a PIL.TkImage
-
+ 
 # Add the ImageTk object to the canvas.
-icon = canvas.create_image(tkimg, 150, 250)
+icon = canvas.create_image(image = img.tk, 150, 250)
     
 # Enter event loop. This displays the GUI and starts listening for events.
 # The program ends when you close the window.
